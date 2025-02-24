@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { addDoc, collection } from 'firebase/firestore'
-import firestore from "../firebase"  // Import the Firestore instance
+import firestore from "../../firebase"  // Import the Firestore instance
+import "./home.css"
 
 export default function Home() {
     const messageRef = useRef()
@@ -25,7 +26,7 @@ export default function Home() {
     }
 
   return (
-    <div>
+    <div className='home'>
         <form onSubmit={handleSave}>
             <label>Enter message</label>
             <input type="text" ref={messageRef} />
