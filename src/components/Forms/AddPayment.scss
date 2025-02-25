@@ -1,9 +1,95 @@
 .add-payment-container {
 
-    border: 1px solid red;
     background: white;
     border-radius: var(--radius-md);
     margin-top: 20px;
-    width:75%;
-    
+    width:50%;
+    height: 75%;
+
+    .addpayment-header {
+        border-radius: var(--radius-md) var(--radius-md) 0 0;
+        background: var(--secondary-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        color: var(--primary-color);
+
+        a {
+            color: var(--primary-color);
+            cursor: pointer;
+            background-color: var(--secondary-color);
+            padding: 2px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: rgba(0, 0, 255, 0.1);
+                color: var(--secondary-color);
+            }
+        }
+    }
+
+    form {
+        border-radius: 0 0 var(--radius-md) var(--radius-md);
+        background-color: #fff;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 20px;
+
+        article {
+            padding: var(--padding-md);
+            gap: 10px;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            width: 100%;
+            max-width: 500px;
+            align-items: center;
+            
+            input, select {
+                width: 100%;
+                height: 40px;
+                padding: 0px 12px;
+                border-radius: var(--radius-sm);
+                border: 1px solid var(--secondary-color);
+            }
+
+            select {
+                background-color: white;
+                cursor: pointer;
+                appearance: none;
+                background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+                background-repeat: no-repeat;
+                background-position: right 12px center;
+                background-size: 12px;
+
+                &:hover {
+                    border-color: var(--primary-color);
+                }
+
+                &:focus {
+                    outline: none;
+                    border-color: var(--primary-color);
+                    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+                }
+            }
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            border-radius: var(--radius-sm);
+            border: none;
+            background-color: var(--secondary-color);
+        }
+    }
 }

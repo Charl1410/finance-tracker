@@ -14,6 +14,7 @@ export default function YourPayments() {
       setIsAddPaymentOpen(true);
     }
 
+    //passed into the onClose prop of the AddPayment component
     const closeAddPayment = () => {
       setIsAddPaymentOpen(false);
     }
@@ -29,9 +30,10 @@ export default function YourPayments() {
 
         {isAddPaymentOpen && (
           <div className="modal-overlay">
-            <AddPayment/>
+            <AddPayment onClose={closeAddPayment}/>
           </div>
-        )}
+          )
+        }
 
         <table className="payment-list">
           <thead>
@@ -39,6 +41,7 @@ export default function YourPayments() {
               <th>Amount</th>
               <th>Date</th>
               <th>Description</th>
+              <th>Category</th>
             </tr>
           </thead>
           <tbody>
@@ -46,14 +49,18 @@ export default function YourPayments() {
               <td className="cost">£10.56</td>
               <td className="date">24/02/2025</td>
               <td className="description">Coffee</td>
+              <td className="category">Food</td>
             </tr>
             <tr className="payment-item">
               <td className="cost">£10.56</td>
               <td className="date">24/02/2025</td>
-              <td className="description">Coffee</td>
+              <td className="description">Coffee</td> 
+              <td className="category">Food</td>
             </tr>
           </tbody>
         </table>
       </div>
     ); 
 }
+
+

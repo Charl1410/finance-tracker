@@ -43,3 +43,12 @@ h1 {
     font-size: 20px;
     font-weight: 600;
 }
+
+.button-primary {
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    background: var(--secondary-color);
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}

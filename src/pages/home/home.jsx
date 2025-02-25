@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import { addDoc, collection } from 'firebase/firestore'
 import firestore from "../../firebase"  // Import the Firestore instance
 import "./home.css"
+import WelcomeBanner from '../../components/WelcomeBanner'
 
 export default function Home() {
     const messageRef = useRef()
@@ -27,11 +28,12 @@ export default function Home() {
 
   return (
     <div className='home'>
-        <form onSubmit={handleSave}>
+        <WelcomeBanner />
+        {/* <form onSubmit={handleSave}>
             <label>Enter message</label>
             <input type="text" ref={messageRef} />
             <button type="submit">Submit</button>
-        </form>
+        </form> */}
     </div>
   )
 }
