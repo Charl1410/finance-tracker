@@ -9,6 +9,15 @@
     border-radius: var(--radius-md);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 
+    .welcome-banner-text {
+        margin-left: 10px;;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
     h1 {
         .wave {
             display: inline-block;
@@ -16,6 +25,16 @@
             transform-origin: 70% 70%;
             margin: 0 10px;
         }
+    }
+
+    .info-cards {
+        gap: var(--spacing-md);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
     }
 }
 

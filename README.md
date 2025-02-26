@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Finance Tracker App
+
+## User Story
+
+As a user, I want to:
+- Track my daily expenses and income
+- Categorize my transactions
+- View my spending patterns
+- Set and monitor budget goals
+- Generate basic financial reports
+
+## Project Goals
+[Add your specific project goals and objectives here]
+
 ## Available Scripts
 
 In the project directory, you can run:

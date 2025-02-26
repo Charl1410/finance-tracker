@@ -88,6 +88,7 @@ export function AddPayment({ onClose }) {
             <option value="transportation">Transportation</option>
             <option value="utilities">Utilities</option>
             <option value="entertainment">Entertainment</option>
+            <option value="other">Presents</option>
             <option value="other">Other</option>
           </select>
         </article>
