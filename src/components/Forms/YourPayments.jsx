@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import firestore from "../../firebase"; // Import the Firestore instance
-import "./YourPayments.scss"
+import "../Forms/scss/YourPayments.scss"
 import { AddPayment } from "./AddPayment";
 export default function YourPayments() {
     const paymentRef = useRef();

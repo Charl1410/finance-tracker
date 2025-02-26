@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { useState } from 'react'
-import "./AddPayment.scss"
+import "../Forms/scss/AddPayment.scss"
 
 
 

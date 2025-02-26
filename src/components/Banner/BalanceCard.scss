@@ -1,0 +1,16 @@
+.balance-card-container {
+    
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction:column;
+
+    h1 {
+        color: var(--secondary-color);
+    }
+
+    p {
+        font-size: var(--font-lg);
+    }
+}
