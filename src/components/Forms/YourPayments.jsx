@@ -67,15 +67,15 @@ export default function YourPayments() {
           <div className="payment-header">
             <h1>Your payments</h1>
             <a onClick={openAddPayment}>Add payment</a>
+            <a onClick={openAddPayment}>Add Category</a>
           </div>
         </form>
 
         {isAddPaymentOpen && (
           <div className="modal-overlay">
-            <AddPayment onClose={closeAddPayment}/>
+            <AddPayment onClose={closeAddPayment} />
           </div>
-          )
-        }
+        )}
 
         <table className="payment-list">
           <thead>
@@ -95,12 +95,12 @@ export default function YourPayments() {
                 <td className="description">{payment.description}</td>
                 <td className="category">{payment.category}</td>
                 <td>
-                    <button 
-                        onClick={() => handleDelete(payment.id)}
-                        className="delete-btn"
-                    >
-                        Delete
-                    </button>
+                  <button
+                    onClick={() => handleDelete(payment.id)}
+                    className="delete-btn"
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
             ))}

@@ -1,0 +1,44 @@
+.category-spend-breakdown {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: #fff;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-left: 20px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content { 
+        display: flex;
+    
+        .category-wheel {
+            width: 50%;
+            position: relative;
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 70%;
+                height: 70%;
+                border-radius: 50%;
+                background: #ffffff; // Example color - you can change this
+                box-shadow: inset 0 0 0 40px #6852d7; // Creates the hollow center
+            }
+        }
+
+        .category-code {
+            width: 50%;
+            border: 1px solid blue;
+        }
+    }
+
+}

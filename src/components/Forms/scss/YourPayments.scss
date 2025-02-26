@@ -1,7 +1,6 @@
 .your-payments {
     background: white;
     border-radius: var(--radius-md);
-    margin-top: 20px;
     width:50%;
     padding: var(--spacing-sm);
     display: flex;
@@ -56,7 +55,7 @@
 
         th, td {
 
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid var(--secondary-color);
             padding: 10px;
             text-align: left;
         }
